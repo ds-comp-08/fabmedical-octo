@@ -1,0 +1,42 @@
+URL:
+	https://octo-cat-inc.westeurope.cloudapp.azure.com/
+	http://13.81.240.65/
+     /\__/\
+    /`    '\
+  === 0  0 ===
+    \  --  /
+   /        \
+  /          \
+ |            |
+  \  ||  ||  /
+   \_oo__oo_/#######o
+
+	http://octo-cats-inc.westeurope.cloudapp.azure.com/
+
+
+
+Azure Database Migration Service: 
+	fabmedical-oct
+
+
+
+              ,-.       _,---._ __  / \
+             /  )    .-'       `./ /   \
+            (  (   ,'            `/    /|
+             \  `-"             \'\   / |
+              `.              ,  \ \ /  |
+               /`.          ,'-`----Y   |
+              (            ;        |   '
+              |  ,-.    ,-'         |  /
+              |  | (   |        AKS | /
+              )  |  \  `.___________|/
+              `--'   `--'
+	Workloads:
+		api:
+		  replicas: 1 (стр 37 пункт 9)
+		web:
+		  replicas: 4 (стр 40 пункт 3)
+
+
+
+           
