@@ -1,5 +1,5 @@
 on: [push]
-name: Linux_Container_Workflow
+name: content-web
 
 jobs:
     build-and-deploy:
@@ -16,5 +16,5 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: |
-            docker build ./content-web -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/content-web:${{ github.sha }}
-            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/content-web:${{ github.sha }}
+            docker build ./content-web -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/content-web:latest
+            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/content-web:latest
