@@ -5,6 +5,10 @@ const request = require('request');
 
 const app = express();
 
+const appInsights = require("applicationinsights");
+appInsights.setup("9523817e-b9a0-42dd-8bff-856fcf53c531");
+appInsights.start();
+
 app.use(express.static(path.join(__dirname, 'dist/content-web')));
 const contentApiUrl = process.env.CONTENT_API_URL || "http://localhost:3001";
 
@@ -78,3 +82,4 @@ app.set('port', port);
 
 const server = http.createServer(app);
 server.listen(port, () => console.log('Running'));
+
